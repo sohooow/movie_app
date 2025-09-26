@@ -2,6 +2,13 @@
 
 A modern React application for discovering and searching movies using The Movie Database (TMDb) API. Built with Vite, Tailwind CSS, and modern React hooks.
 
+<img width="1470" height="825" alt="image" src="https://github.com/user-attachments/assets/b7fa8b7f-e0f0-4765-aa2d-f148d948d470" />
+<img width="1470" height="829" alt="image" src="https://github.com/user-attachments/assets/0462004c-d0d5-4d4c-b957-43edee91de34" />
+<img width="1470" height="823" alt="image" src="https://github.com/user-attachments/assets/59fa7669-30e1-4973-995d-d0354f25e862" />
+
+
+
+
 ## Features
 
 - Search movies by title
