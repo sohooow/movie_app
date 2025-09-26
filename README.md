@@ -17,6 +17,7 @@ A modern React application for discovering and searching movies using The Movie 
 - **Vite** - Build tool and development server
 - **Tailwind CSS** - Utility-first CSS framework
 - **TMDb API** - Movie data source
+- **Appwrite** - Backend as a Service for database
 - **react-use** - Collection of React hooks
 - **JavaScript (ES6+)** - Programming language
 
@@ -27,6 +28,7 @@ Before running this application, make sure you have:
 - Node.js (version 16 or higher)
 - npm or yarn package manager
 - TMDb API key (free registration at https://www.themoviedb.org/settings/api)
+- Appwrite account and project (free at https://appwrite.io/)
 
 ## Installation
 
@@ -46,9 +48,14 @@ npm install
 cp .env.example .env
 ```
 
-4. Add your TMDb API key to `.env`:
+4. Add your API keys and configuration to `.env`:
 ```
-VITE_TMDB_API_KEY=your_api_key_here
+VITE_TMDB_API_KEY=your_tmdb_api_key_here
+VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
+VITE_APPWRITE_PROJECT_NAME=your_project_name
+VITE_APPWRITE_ENDPOINT=https://fra.cloud.appwrite.io/v1
+VITE_APPWRITE_DATABASE_ID=your_database_id
+VITE_APPWRITE_COLLECTION_ID=metrics
 ```
 
 ## Usage
@@ -87,6 +94,11 @@ This application uses The Movie Database (TMDb) API to fetch movie data. The fol
 | Variable | Description | Required |
 |----------|-------------|----------|
 | `VITE_TMDB_API_KEY` | Your TMDb API key | Yes |
+| `VITE_APPWRITE_PROJECT_ID` | Appwrite project ID | Yes |
+| `VITE_APPWRITE_PROJECT_NAME` | Appwrite project name | Yes |
+| `VITE_APPWRITE_ENDPOINT` | Appwrite endpoint URL | Yes |
+| `VITE_APPWRITE_DATABASE_ID` | Appwrite database ID | Yes |
+| `VITE_APPWRITE_COLLECTION_ID` | Appwrite collection ID for metrics | Yes |
 
 ## License
 
